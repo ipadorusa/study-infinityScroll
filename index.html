@@ -5,14 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    #list-item {
+      /* We need to limit the height and show a scrollbar */
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+
+      /* Optional, only to check that it works with margin/padding */
+      margin: 30px;
+      padding: 20px;
+      border: 10px solid black;
+    }
+    li {
+      padding: 10px;
+      list-style-type: none;
+    }
+    li:hover {
+      background: #ccc;
+    }
+  </style>
 </head>
 <body>
   <h1>infinity scroll (IntersectionObserver)</h1>
   <div id="content">
-      <ul id="listItem"></ul>
+      <ul id="list-item"></ul>
   </div>
   
   <script src="./infinity.js"></script>
+  <script>
+    const scrollE = new infiteScroll('#list-item');
+  </script>
 </body>
 </html>
 
