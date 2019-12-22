@@ -35,3 +35,4 @@ class infiteScroll {
 // append 할 list 갯수
 // createDocumentFragment
 // IntersectionObserver
+// https://velog.io/@doondoony/IntersectionObserver 참고
