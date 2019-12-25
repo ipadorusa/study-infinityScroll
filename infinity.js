@@ -9,7 +9,6 @@ class infiteScroll {
   }
   init() {
     this.bindEvent();
-    
   }
   bindEvent() {
     this.appendEvt();
@@ -17,6 +16,8 @@ class infiteScroll {
   observer() {
     const io = new IntersectionObserver(callbakc, {
       root: this.target,
+      rootMargin: '0px',
+      threshold: 0.5
     });
   }
   appendEvt() {
